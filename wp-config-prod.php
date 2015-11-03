@@ -14,20 +14,20 @@
  * @package WordPress
  */
 
-define('SAVEQUERIES', true);
+define('SAVEQUERIES', false);
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define('DB_NAME', 'host4_sv039');
+define('DB_NAME', 'psykomp_db');
 
 /** Имя пользователя MySQL */
-define('DB_USER', 'host4_sv039');
+define('DB_USER', 'psykomp_mysql');
 
 /** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'hlbllmac');
+define('DB_PASSWORD', 'MRM1Msn+');
 
 /** Имя сервера MySQL */
-define('DB_HOST', 'host4.mysql');
+define('DB_HOST', 'psykomp.mysql');
 
 /** Кодировка базы данных для создания таблиц. */
 define('DB_CHARSET', 'utf8');

@@ -32,8 +32,7 @@
         </div>
         <div class="Fela2 grid-2-1">
          <div>
-        <a href="/nashi-uslugi-na-raznyx-yazykax">Unseren deutschen Partnern</a>
-		<a href="/nashi-uslugi-na-raznyx-yazykax">For our english partners</a>
+        <a href="/nashi-uslugi-na-raznyx-yazykax">Информация на английском и немецком языках</a>
         </div>
         </div>
         

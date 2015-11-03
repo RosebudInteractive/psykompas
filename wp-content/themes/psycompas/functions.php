@@ -204,23 +204,22 @@ function add_new_taxonomies1() {
 }
 add_action( 'init', 'add_new_taxonomies1', 0 );
 
-add_action( 'init', 'create_post_type2' );
-function create_post_type2() {
+add_action( 'init', 'create_post_type_vopros' );
+function create_post_type_vopros() {
 register_post_type( 'vopros',
 array(
 'labels' => array( // добавляем новые элементы в консоль
-'name' => __( 'Вопросы и Ответы' ),
-'singular_name' => __( 'Вопросы и Ответы' ),
+'name' => __( 'Вопрос-ответ' ),
+'singular_name' => __( 'Вопрос-ответ' ),
 'has_archive' => true,
 'add_new' => 'Добавить новый материал',
 'not_found' => 'Ничего не найдено',
 'not_found_in_trash' => 'В корзине материалов не найдено'
 ),
+'public' => true,
   'has_archive' => 'vopros',
-        'rewrite' => array(
-            'slug' => 'vopros-otvet',
-            'with_front' => false
-        ),
+'rewrite' => array( 'slug' => 'vopros-otvet/%rubrika2%', 'with_front' => false ),
+
 'hierarchical'        => true,
 'supports' => array( //добавляем элементы в редактор
 'title',
@@ -230,10 +229,31 @@ array(
 'post-formats',
 'comments'
 ),
-'taxonomies' => array('rubrika2') //добавляем к записям необходимый набор таксономий
+'taxonomies' => array('rubrika2','post_tag') //добавляем к записям необходимый набор таксономий
+
 ));
 }
-function add_new_taxonomies2() {	
+//post 1
+// Make permalinks for Recipes pretty (add Cuisine to URL)
+	// -------------------------------------------------------------
+	function vopros_type_link_filter_function( $post_link, $id = 0, $leavename = FALSE ) {
+    if ( strpos('%rubrika2%', $post_link) === 'FALSE' ) {
+      return $post_link;
+    }
+    $post = get_post($id);
+    if ( !is_object($post) || $post->post_type != 'vopros' ) {
+      return $post_link;
+    }
+    $terms = wp_get_object_terms($post->ID, 'rubrika2');
+    if ( !$terms ) {
+      return str_replace('vopros-otvet/%rubrika2%/', '', $post_link);
+    }
+    return str_replace('%rubrika2%', $terms[0]->slug, $post_link);
+  }
+
+add_filter('post_type_link', 'vopros_type_link_filter_function', 1, 3);
+
+function add_new_taxonomies_vopros() {	
 /* создаем функцию с произвольным именем и вставляем 
 в неё register_taxonomy() */	
 	register_taxonomy('rubrika2',
@@ -246,7 +266,7 @@ function add_new_taxonomies2() {
 				/* ярлыки, нужные при создании UI, можете
 				не писать ничего, тогда будут использованы
 				ярлыки по умолчанию */
-				'name' => 'Рубрика-Вопрос',
+				'name' => 'Рубрика',
 				'singular_label' => __('Рубрика'),
 				'search_items' =>  'Найти Рубрику',
 				'popular_items' => 'Популярные Рубрики',
@@ -277,11 +297,14 @@ function add_new_taxonomies2() {
 			/* разрешено ли использование query_var, также можно 
 			указать строку, которая будет использоваться в качестве 
 			него, по умолчанию - имя таксономии */
-'rewrite' => array('slug' => 'vopros-otvet' ),
+'rewrite' =>array(
+            'slug' => 'vopros-otvet',
+            'with_front' => false
+        ),
 		)
 	);
 }
-add_action( 'init', 'add_new_taxonomies2', 0 );
+add_action( 'init', 'add_new_taxonomies_vopros', 0 );
 add_action( 'init', 'create_post_type3' );
 function create_post_type3() {
 register_post_type( 'otzyv',
@@ -1261,3 +1284,4 @@ add_action('admin_init', 'my_adress');
 function callback_adress(){
    echo "<input class='regular-text' type='text' name='our_adress' value='". esc_attr(get_option('our_adress'))."'>";
 }
+

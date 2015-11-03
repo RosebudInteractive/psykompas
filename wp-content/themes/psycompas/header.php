@@ -13,6 +13,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
+    <meta name="robots" content="index,follow" />
     <title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -73,9 +74,12 @@
     <div class="container">
         <hgroup>
         <div class="grid-4">
-			<h1 id="logo">
+			<!-- <h1 id="logo">
  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> <?php bloginfo( 'name' ); ?></a> 
-</h1>
+</h1> -->
+<span id="logo">
+ <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> <?php bloginfo( 'name' ); ?></a> 
+</span>
             </div>
             <div class="grid-4-1">
                         <div class="F-contakts"><a href="mailto: <?php bloginfo('admin_email'); ?>" title="Написать нам" target="_blank">       <?php bloginfo('admin_email'); ?></a>

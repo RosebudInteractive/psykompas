@@ -486,13 +486,13 @@ body.home #header {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
-h1#logo {
+span#logo {
 	float: left;
 	font-size: 24px;
 	line-height: 24px;
 	margin: 7px 0 0 0;
 }
-h1#logo a {
+span#logo a {
 	background: url(images/logo.png) no-repeat 0 0;
 	color: #292929;
 	display: inline-block;
@@ -501,7 +501,7 @@ h1#logo a {
 	width: 224px;
 	border: none;
 }
-h1#logo a:hover {
+span#logo a:hover {
 	opacity: .6;
 }
 div.F-contakts {

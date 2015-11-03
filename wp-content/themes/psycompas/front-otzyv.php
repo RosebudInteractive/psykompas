@@ -1,7 +1,7 @@
 <div class="front-block2">
 <section id="block-trening-services-block" class="block-trening-services-block block block-trening block-odd">
 <div class="otzyvWrap">
-<h2 class="title block-title">Отзывы</h2>
+<span class="title block-title">Отзывы</span>
 <div class="navOtzyv unerborder"><a href="/otzyvy">Все отзывы</a></div>
 </div>
 <?php $args = array(

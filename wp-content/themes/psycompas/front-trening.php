@@ -1,7 +1,7 @@
             <div class="front-block">
 <section id="block-trening-services-block" class="block-trening-services-block block block-trening block-odd">
  
-<h2 class="title block-title">Ближайшие тренинги</h2>
+<span class="title block-title">Ближайшие тренинги</span>
 <div class="navTren"><a href="/treningi">Полное расписание тренингов</a></div>
 
 <div class="content block-content">

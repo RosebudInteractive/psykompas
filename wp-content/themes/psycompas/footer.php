@@ -70,7 +70,7 @@
 <a href="#" onclick="return closeModal('#callWin');" class="closeIcon"></a>
     <a href="#" onclick="return closeModal('#callWin');"  class="closeTitle">Назад</a>
     </div>
-            <h1>Заказать звонок</h1>
+            <span class="pop-title">Заказать звонок</span>
 <div class="formZap">
       <?php echo do_shortcode( '[contact-form-7 id="128" title="Заказать звонок"]');?>
       </div>
@@ -86,7 +86,7 @@
 <div class="closeStyle">
 <a href="#"  onclick="return closeModal('#questionWin');" class="closeIcon"> </a><a href="#"  onclick="return closeModal('#questionWin');" class="closeTitle">Назад</a>
 </div>
-     <h1>Задать вопрос</h1>
+     <span class="pop-title">Задать вопрос</span>
 <div class="openWblock1 partLeft">
        	<section class="demo">
 

@@ -1982,7 +1982,7 @@ nav#access div.answerQ a:active {
 	border: none;
 }
 nav#access div.answerQ a:hover{  border-bottom: 1px solid #1946ba;}
-section#marketing h2:first-letter, #contentWrap h2:first-letter {
+section#marketing span.block-title:first-letter, #contentWrap h2:first-letter {
 	float: left;
 	font-size: 68px;
 	padding: 0px;
@@ -1995,7 +1995,7 @@ section#marketing h2:first-letter, #contentWrap h2:first-letter {
 	margin-left: 0px;
 	/* color: bisque; */
 }
-section#marketing h2, #contentWrap h2 {
+section#marketing span.block-title, #contentWrap h2 {
 	margin: 0;
 	font-size: 24px;
 	line-height: 33px;
@@ -2003,15 +2003,15 @@ section#marketing h2, #contentWrap h2 {
 	padding-right: 102px;
 	font-weight: 400;
 }
-section#marketing h2.block-title {
+section#marketing span.block-title {
 	font-size: 42px;
 	font-family: "PT Serif", serif;
 	font-weight: 400;
 	float: left;
-	display: inline;/* margin-left: 2px; */
-*/;
+	display: inline;
 }
-section#marketing h2.block-title:first-letter {
+
+section#marketing span.block-title:first-letter {
 	font-size: 42px;
 	font-family: "PT Serif", serif;
 	font-weight: 400;
@@ -2424,7 +2424,7 @@ div#wrapper.tren_cat #block-trening-services-block div.block-content div.trening
 	float: left;
 	display: inline;
 }
-#block-trening-services-block div.titleQ h2.block-title {
+#block-trening-services-block div.titleQ span.block-title {
 	line-height: 50px;
 	margin-left: 1px;
 }
@@ -3378,13 +3378,7 @@ div.socialBlock span.b-share-counter{  position: absolute;
  
  
   }
-#page #callWin .openwindowWrap h1{
-  padding-right: 270px;
-  margin-top: 18px;
-  font-size: 80px;    line-height: 85px;    color: white;
-  width: 360px;
-  margin-bottom: 26px;
-}
+
 #page #callWin .openwindowWrap div.formZap {border: none;
   padding: 0;}
   
@@ -3462,7 +3456,7 @@ background: linear-gradient(0deg, rgb(213, 86, 69) 30%, rgb(224, 86, 69) 70%);
   font-size: 17px;
   padding-top: 11px;}
   
-  .zadatVopros div.padWrap h1{	   
+  .zadatVopros div.padWrap span.pop-title,#page #callWin .openwindowWrap span.pop-title{	   
           font-size: 80px;
 		  line-height: 85px;
 		  color: white;
@@ -3470,7 +3464,21 @@ background: linear-gradient(0deg, rgb(213, 86, 69) 30%, rgb(224, 86, 69) 70%);
 -webkit-animation: smooth-entry-title 1s;
     -moz-animation: smooth-entry-title 1s;
     animation: smooth-entry-title 1s;
+		font-weight: 400;
+	font-family: 'PT Serif', serif;
+	position:relative!important;
+	    display: block;
 		  }
+		  
+	#page #callWin .openwindowWrap span.pop-title	{
+		
+    padding-right: 270px;
+    margin-top: 18px;
+    width: 360px;
+    margin-bottom: 26px;
+	
+	}  
+		  
    .zadatVopros div.padWrap div.partLeft{margin-right:30px;width:594px;}
    .zadatVopros div.padWrap div.partRight{  width:572px;position:relative;
 	  }

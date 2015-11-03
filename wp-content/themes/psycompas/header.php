@@ -42,15 +42,18 @@
     
 
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/psycompas/css/styledrop.css" />
-	<script type='text/javascript' src='/wp-content/themes/psycompas/js/select.js'></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+	<script async type='text/javascript' src='/wp-content/themes/psycompas/js/select.js'></script>
+    <script async src='https://www.google.com/recaptcha/api.js'></script>
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
-	<script type="text/javascript" src="/wp-content/themes/psycompas/js/ui.core.js"></script>
-   	<script type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.cookie.js"></script>
-   	<script type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.scroll-follow.js"></script>	
+	<script async type='text/javascript' src='http://psy.optimum.by/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+    <script async type='text/javascript' src='http://psy.optimum.by/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+    <script async type='text/javascript' src='http://psy.optimum.by/wp-content/themes/psycompas/loadmore.js?ver=4.3.1'></script>
+	<script async type="text/javascript" src="/wp-content/themes/psycompas/js/ui.core.js"></script>
+   	<script async type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.cookie.js"></script>
+   	<script async type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.scroll-follow.js"></script>	
 	<script type="text/javascript">
    		jQuery( document ).ready( function ()
 			{
@@ -89,16 +92,14 @@
          <div class="grid-2-1">
          <div class="phone_call btnWrap"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Заказать звонок" rel="home" onclick="return openModal('#callWin');"> <div class="knopkaR btnNormalR">Заказать звонок</div></a></div>
          </div>
-		<nav id="access" role="navigation" class="grid-12">
-			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
-			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
+		<nav id="access" role="navigation" class="grid-12">			
          	<!-- Main Menu -->
 				<div id="mainmenu" class="menu-main-container grid-7">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '') ); ?>
            
             </div>
              <div class="grid-2-1">
-             <div class="askQ btnWrap"><a href="http://psy.optimum.by/" title="psycompas.ru" rel="home" onclick="return openModal('#questionWin');"><div class="knopka btnsmallW">
+             <div class="askQ btnWrap"><a href="#" title="psycompas.ru" rel="home" onclick="return openModal('#questionWin');"><div class="knopka btnsmallW">
 Задать вопрос психологу</div></a></div>
              <div class="answerQ"><a href="/vopros-otvet">Ответы</a></div>
              </div>

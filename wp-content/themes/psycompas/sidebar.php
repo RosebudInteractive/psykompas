@@ -19,7 +19,7 @@
         <div id="followblock" style="top: 0px; ">
         <div id="secondary" class="grid-2 omega">
 <section id="secondary-nav" class="clearfix">
-<h4 class="parent-title">Новости</h4>
+<span class="parent-title">Новости</span>
  <div class="news-block">
      <?php
 $args =array( 'posts_per_page' => 5, 'orderby'=> 'ASK', 'category' => 62 );

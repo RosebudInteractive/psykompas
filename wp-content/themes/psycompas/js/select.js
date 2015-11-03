@@ -128,7 +128,7 @@ function openModal(id) {
     jQuery('body').css('overflow', 'hidden');
 
     if (id == '#questionWin') {
-        jQuery('#questionWin h1').hide();
+        jQuery('#questionWin .pop-title').hide();
         jQuery('.openWblock1 .lineForm').hide();
         jQuery('.openWblock1 .lineForm1').hide();
         jQuery('.openWblock1 .lineForm2').hide();
@@ -165,8 +165,8 @@ function toggleAnswer(obj, id) {
 
 function animateVopros() {
     var margin = 6, speed = 250;
-    jQuery('#questionWin h1').css({'margin-top': "+="+margin+"px"});
-    jQuery('#questionWin h1').fadeIn(speed).dequeue().animate({'margin-top': "-="+margin+"px"}, speed, 'swing', function(){
+    jQuery('#questionWin .pop-title').css({'margin-top': "+="+margin+"px"});
+    jQuery('#questionWin .pop-title').fadeIn(speed).dequeue().animate({'margin-top': "-="+margin+"px"}, speed, 'swing', function(){
         jQuery('.openWblock1 .lineForm').css({'margin-top': "10px"});
         jQuery('.openWblock1 .lineForm').fadeIn(speed).dequeue().animate({'margin-top': "-="+margin+"px"}, speed, 'swing', function(){
             jQuery('.openWblock1 .lineForm1').css({'margin-top': "+="+margin+"px"});

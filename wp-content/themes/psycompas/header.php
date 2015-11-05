@@ -48,9 +48,9 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
-	<script async type='text/javascript' src='http://psy.optimum.by/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
-    <script async type='text/javascript' src='http://psy.optimum.by/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-    <script async type='text/javascript' src='http://psy.optimum.by/wp-content/themes/psycompas/loadmore.js?ver=4.3.1'></script>
+	<script  type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+    <script async type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+    <script async type='text/javascript' src='/wp-content/themes/psycompas/loadmore.js?ver=4.3.1'></script>
 	<script async type="text/javascript" src="/wp-content/themes/psycompas/js/ui.core.js"></script>
    	<script async type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.cookie.js"></script>
    	<script async type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.scroll-follow.js"></script>	

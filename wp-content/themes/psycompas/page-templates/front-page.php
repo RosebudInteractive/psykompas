@@ -29,24 +29,7 @@ get_header(); ?>
 				<?php endif; ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-       <?php 
-	   if ( is_front_page() ) 
-{
-	   
-}
-else {
-	
-?>
 
-        <div class="breadcrumbs">
-    <p><a href="/" class="custom_navigation">На главную</a> &gt; </p>             <strong><?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?></strong>       
-                        
-                        </div>
-                        <?php }?>
                         <div class="WrapBlock">
 <!--start блок тренингов-->
 <?php include (TEMPLATEPATH . '/front-trening.php'); ?>

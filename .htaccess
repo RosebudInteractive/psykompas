@@ -1,9 +1,23 @@
+<IfModule mod_expires.c>
+# Enable expirations
+ExpiresActive On 
+# Default directive
+ExpiresDefault "access plus 1 month"
+</IfModule>
+
 AddDefaultCharset UTF-8
 php_flag display_errors off
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.psykompas\.ru(.*)$
+RewriteRule ^(.*)$ http://psycompas.ru/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^psykompas\.ru(.*)$
+RewriteRule ^(.*)$ http://psycompas.ru/$1 [L,R=301]
+
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f

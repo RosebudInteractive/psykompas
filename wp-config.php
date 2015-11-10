@@ -14,7 +14,7 @@
  * @package WordPress
  */
 
-define('SAVEQUERIES', false);
+define('SAVEQUERIES', true);
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */

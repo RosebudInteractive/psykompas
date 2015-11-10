@@ -42,18 +42,15 @@
     
 
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/psycompas/css/styledrop.css" />
-	<script async type='text/javascript' src='/wp-content/themes/psycompas/js/select.js'></script>
-    <script async src='https://www.google.com/recaptcha/api.js'></script>
+	<script type='text/javascript' src='/wp-content/themes/psycompas/js/select.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
-	<script  type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
-    <script async type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-    <script async type='text/javascript' src='/wp-content/themes/psycompas/loadmore.js?ver=4.3.1'></script>
-	<script async type="text/javascript" src="/wp-content/themes/psycompas/js/ui.core.js"></script>
-   	<script async type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.cookie.js"></script>
-   	<script async type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.scroll-follow.js"></script>	
+	<script type="text/javascript" src="/wp-content/themes/psycompas/js/ui.core.js"></script>
+   	<script type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.cookie.js"></script>
+   	<script type="text/javascript" src="/wp-content/themes/psycompas/js/jquery.scroll-follow.js"></script>	
 	<script type="text/javascript">
    		jQuery( document ).ready( function ()
 			{
@@ -99,7 +96,7 @@
            
             </div>
              <div class="grid-2-1">
-             <div class="askQ btnWrap"><a href="#" title="psycompas.ru" rel="home" onclick="return openModal('#questionWin');"><div class="knopka btnsmallW">
+             <div class="askQ btnWrap"><a href="http://psy.optimum.by/" title="psycompas.ru" rel="home" onclick="return openModal('#questionWin');"><div class="knopka btnsmallW">
 Задать вопрос психологу</div></a></div>
              <div class="answerQ"><a href="/vopros-otvet">Ответы</a></div>
              </div>

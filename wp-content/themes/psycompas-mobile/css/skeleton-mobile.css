@@ -1,0 +1,329 @@
+/* Table of Contents:
+ 1. Tablet landscape
+ 2. Tablet portrait
+ 3. Mobile
+*/
+
+
+
+/*==========================================================================
+1. Tablet landscape
+===========================================================================*/
+.container{width: 906px; margin: 0 auto; position: relative; }
+.container .grid-12 {/* width: 98%; */margin: 0 auto;}
+	header#header .toggle-mobile{
+	display: block;
+	position: absolute;
+	outline: none;
+	top: 0;
+	right: 0;
+	width: 50px;
+	width: 100%;
+	/* background: #FFF; */
+	height: 50px;
+	cursor: pointer;
+	z-index: 9;
+	overflow: hidden;
+	margin-top: 18px;
+	}
+	
+	
+	header#header .toggle-mobile span.visible{
+		-webkit-transform: translate3d(-18px,0,0);
+    -moz-transform: translate3d(-18px,0,0);
+    -o-transform: translate3d(-18px,0,0);
+    -ms-transform: translate3d(-18px,0,0);
+    transform: translate3d(-18px,0,0);
+		}
+
+	header#header .toggle-mobile span{
+	outline: none;
+	position: absolute;
+	-webkit-transform: translate3d(-18px,-50px,0);
+	-moz-transform: translate3d(-18px,-50px,0);
+	-o-transform: translate3d(-18px,-50px,0);
+	-ms-transform: translate3d(-18px,-50px,0);
+	transform: translate3d(-18px,-50px,0);
+	-webkit-transition: 
+	-webkit-transform 0.4s cubic-bezier(0.645,0.045,0.355,1);
+	transition: transform 0.4s cubic-bezier(0.645,0.045,0.355,1);
+	right: 0;
+	display: block;
+	width: 50px;
+	height: 100px;
+	text-indent: -9999px;
+	background: url(../images/menu_mob.png) no-repeat 0 0;
+	-webkit-background-size: 50px auto;
+	-moz-background-size: 50px auto;
+	-o-background-size: 50px auto;
+	background-size: 50px auto;
+	/* margin-top: 18px; */
+	}
+
+header#header{
+	width: 906px;
+	margin-left: 0;
+	left: 0;
+	height: 74px;
+	overflow: visible;
+	/* position: fixed; */
+	z-index: 99;
+	margin:0 auto;
+}
+
+header#header #access{
+	position: absolute;
+	width: 100%;
+	float: none;
+	padding: 0;
+	top: 0;
+	right: 0;
+	height: auto;
+	overflow: hidden;
+	-webkit-transition: 
+    
+	
+	
+	
+	
+	-webkit-transform 0.35s cubic-bezier(0.645,0.045,0.355,1);
+	transition: transform 0.35s cubic-bezier(0.645,0.045,0.355,1);
+	background: rgb(244, 211, 207);
+	-webkit-transform: translate3d(0,-360px,0);
+	-moz-transform: translate3d(0,-360px,0);
+	-o-transform: translate3d(0,-360px,0);
+	-ms-transform: translate3d(0,-360px,0);
+	transform: translate3d(0,-360px,0);
+	/* z-index: 9; */
+	}
+
+header#header #access.visible {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+header#header #access ul {
+    margin-top: 49px;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0;
+    display: block;
+    top: 0px;
+    right: 0;
+    -webkit-transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1);
+    -moz-transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1);
+    -ms-transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1);
+    -o-transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1);
+    margin: 0;
+    line-height: 1em;
+    list-style-type: none;
+    font-size: 0;
+    position: relative;
+    padding-top: 80px;
+ }
+
+header#header #access ul li{
+	display: block;
+	margin-left: 18px;
+	font-size: 18px;
+	line-height:36px;
+	text-align: left;
+	z-index: 8;
+	}
+	div.statStyle div.pageSite{
+	width: 906px;
+	}
+	
+	div.imgTop{
+		position: absolute;
+  width: 437px;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+		}
+@media (max-width: 1200px) {
+	.container {width: 960px;}
+
+	.grid-1,
+	.grid-2,
+	.grid-3,
+	.grid-4,
+	.grid-5,
+	.grid-6,
+	.grid-7,
+	.grid-8,
+	.grid-9,
+	.grid-10,
+	.grid-11,
+	.grid-12 {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.container .grid-1 {width: 60px;}
+	.container .grid-2 {width: 140px;}
+	.container .grid-3 {width: 260px;}
+	.container .grid-4 {width: 300px;}
+	.container .grid-5 {width: 380px;}
+	.container .grid-6 {width: 460px;}
+	.container .grid-7 {width: 540px;}
+	.container .grid-8 {width: 620px;}
+	.container .grid-9 {width: 700px;}
+	.container .grid-10 {width: 780px;}
+	.container .grid-11 {width: 860px;}
+	.container .grid-12 {width: 940px;}
+
+
+	/* Prefix Styles
+	===========================================================================*/
+
+	.container .prefix-1 {padding-left: 80px;}
+	.container .prefix-2 {padding-left: 160px;}
+	.container .prefix-3 {padding-left: 240px;}
+	.container .prefix-4 {padding-left: 320px;}
+	.container .prefix-5 {padding-left: 400px;}
+	.container .prefix-6 {padding-left: 480px;}
+	.container .prefix-7 {padding-left: 560px;}
+	.container .prefix-8 {padding-left: 640px;}
+	.container .prefix-9 {padding-left: 720px;}
+	.container .prefix-10 {padding-left: 800px;}
+	.container .prefix-11 {padding-left: 880px;}
+
+
+	/* Suffix Styles
+	===========================================================================*/
+
+	.container .suffix-1 {padding-right: 80px;}
+	.container .suffix-2 {padding-right: 160px;}
+	.container .suffix-3 {padding-right: 240px;}
+	.container .suffix-4 {padding-right: 320px;}
+	.container .suffix-5 {padding-right: 400px;}
+	.container .suffix-6 {padding-right: 480px;}
+	.container .suffix-7 {padding-right: 560px;}
+	.container .suffix-8 {padding-right: 640px;}
+	.container .suffix-9 {padding-right: 720px;}
+	.container .suffix-10 {padding-right: 800px;}
+	.container .suffix-11 {padding-right: 880px;}
+}
+
+
+
+/*==========================================================================
+2. Tablet portrait
+===========================================================================*/
+/* Note: Design for a width of 768px */
+
+@media (max-width: 995px) {
+	.container {width: 768px;}
+
+	.container .grid-1 {width: 44px;}
+	.container .grid-2 {width: 108px;}
+	.container .grid-3 {width: 172px;}
+	.container .grid-4 {width: 236px;}
+	.container .grid-5 {width: 300px;}
+	.container .grid-6 {width: 364px;}
+	.container .grid-7 {width: 428px;}
+	.container .grid-8 {width: 492px;}
+	.container .grid-9 {width: 556px;}
+	.container .grid-10 {width: 620px;}
+	.container .grid-11 {width: 684px;}
+	.container .grid-12 {width: 748px;}
+
+
+	/* Prefix Styles
+	===========================================================================*/
+
+	.container .prefix-1 {padding-left: 64px;}
+	.container .prefix-2 {padding-left: 128px;}
+	.container .prefix-3 {padding-left: 192px;}
+	.container .prefix-4 {padding-left: 256px;}
+	.container .prefix-5 {padding-left: 320px;}
+	.container .prefix-6 {padding-left: 384px;}
+	.container .prefix-7 {padding-left: 448px;}
+	.container .prefix-8 {padding-left: 512px;}
+	.container .prefix-9 {padding-left: 576px;}
+	.container .prefix-10 {padding-left: 640px;}
+	.container .prefix-11 {padding-left: 704px;}
+
+
+	/* Suffix Styles
+	===========================================================================*/
+
+	.container .suffix-1 {padding-right: 64px;}
+	.container .suffix-2 {padding-right: 128px;}
+	.container .suffix-3 {padding-right: 192px;}
+	.container .suffix-4 {padding-right: 256px;}
+	.container .suffix-5 {padding-right: 320px;}
+	.container .suffix-6 {padding-right: 384px;}
+	.container .suffix-7 {padding-right: 448px;}
+	.container .suffix-8 {padding-right: 512px;}
+	.container .suffix-9 {padding-right: 576px;}
+	.container .suffix-10 {padding-right: 640px;}
+	.container .suffix-11 {padding-right: 704px;}
+}
+
+
+
+/*==========================================================================
+1. Mobile
+===========================================================================*/
+/* Note: Design for a width of 480px */
+
+@media (max-width: 767px) {
+	  body {
+overflow-y:scroll;
+  }
+	.container {
+width:100%;
+	}
+
+	.container [class*="grid-"] {
+		display: block;
+		float: none;
+		margin: 0 0 18px;
+		width: auto;
+		padding: 0 18px;
+	}
+nav#access {
+    padding-top: 0!important;
+}
+	.grid-12,
+	.omega {
+		margin-bottom: 0 !important;
+	}
+
+	span#logo{ max-width:150px!important;}
+	header#header{
+	width: 100%;
+	height:50px;
+	}
+div.shablon_wrap div.opener .openWrap div.padSpec{ padding-top:84px!important;}
+	div.statStyle div.pageSite{
+	width: 100%;
+	}
+	div.other ul.recent li{
+		width:282px;}
+		
+		div.imgTop{
+	position: absolute;
+	width: 500px;
+	min-height: 280px;
+	z-index: 1;
+	bottom: 0;
+	right: -316px;
+	overflow: hidden;
+	}
+		div#primary div.statStyle div.obertkaDlaShablona div.obertkaContent{
+			width:100%!important;
+			}
+		
+	/* Prefix and suffix styles
+	===========================================================================*/
+
+	.container [class*="prefix-"] {padding-left: 0;}
+	.container [class*="suffix-"] {padding-right: 0;}
+}

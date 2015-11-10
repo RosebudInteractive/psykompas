@@ -1,4 +1,24 @@
 <?php
+/*
+function use_mobile_theme() {
+    // Chech device is mobile or not
+    if(isMobile()){
+        echo 'use mobile';
+        return 'psycompas-mobile'; // set theme name here, which you want to open on mobile
+    }
+    else {
+        echo 'use common';
+        return 'psycompas'; // set theme name here, which you want to open on other devices, like desktop
+    }
+}
+// This function is to detect device is mobile or not
+function isMobile() {
+    return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+}
+add_filter( 'stylesheet', 'use_mobile_theme' );
+add_filter( 'template', 'use_mobile_theme' );
+add_filter( 'current_theme', 'use_mobile_theme');*/
+
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
 register_post_type( 'trening',
@@ -725,9 +745,6 @@ function twentytwelve_scripts_styles() {
 	if ( ! empty( $font_url ) )
 		wp_enqueue_style( 'twentytwelve-fonts', esc_url_raw( $font_url ), array(), null );
 
-	// Loads our main stylesheet.
-	wp_enqueue_style( 'twentytwelve-style', get_stylesheet_uri() );
-
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentytwelve-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentytwelve-style' ), '20121010' );
 	$wp_styles->add_data( 'twentytwelve-ie', 'conditional', 'lt IE 9' );
@@ -1284,4 +1301,3 @@ add_action('admin_init', 'my_adress');
 function callback_adress(){
    echo "<input class='regular-text' type='text' name='our_adress' value='". esc_attr(get_option('our_adress'))."'>";
 }
-

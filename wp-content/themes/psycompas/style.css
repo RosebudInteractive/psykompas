@@ -2096,6 +2096,10 @@ div.Fel1 div.logomini {
 }
 div.shablon_wrap {
 	margin-top: 53px;
+	margin-right: -30px;
+	overflow: hidden;
+	display: block;
+	height: 100%;
 }
 div.shablon_wrap div.news1 {
 	width: 288px;
@@ -2246,7 +2250,7 @@ div.shablon_wrap div.opener .openWrap div.padSpec{
   div.shablon_wrap div.opener .openWrap div.padSpec .sotr_tel{font-size: 17px;
   line-height: 27px;}
 div.shablon_wrap div#sotr-77 {
-	margin-right: -3px;
+	/* margin-right: -3px; */
 }
   div.shablon_wrap div.opener .openWrap div.padSpec .sotr_email{  font-size: 17px;
   line-height: 27px;
@@ -2254,7 +2258,7 @@ div.shablon_wrap div#sotr-77 {
   div.shablon_wrap div.opener .openWrap div.padSpec .sotr_email a{border-bottom: 1px solid rgba(201, 188, 204, 0.98);}
    div.shablon_wrap div.opener .openWrap div.padSpec .sotr_email a:hover{border-bottom: 1px solid #222222; }
 div.shablon_wrap div#sotr-80 {
-	margin-left: -2px;
+	/* margin-left: -2px; */
 }
 div.shablon_wrap div.opener .openWrap div.padSpec div.sotr_story p{  
 	margin-top: 29px;
@@ -2357,9 +2361,7 @@ div.trening-psy span.tags-links a {
 div.WrapBlock .front-block {
 	margin-bottom: 126px;/* border-top: 1px solid black; */
 }
-div.WrapBlock .front-block img{  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter ….3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-  filter: gray;
-  -webkit-filter: grayscale(100%);}
+div.WrapBlock .front-block img{    filter: url("/wp-content/themes/psycompas/js/filters.svg#grayscale");  /* Firefox 10+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */   -webkit-backface-visibility: hidden; /* Fix for transition flickering */}
 div.WrapBlock .front-block1 {
 	border-top: 1px solid #e8e8e8;
 	padding-top: 47px;
@@ -2781,9 +2783,7 @@ body.single-trening div.imgTop{  position: absolute;
   z-index: 1;
   bottom: 0;
   right: 0;}
-  body.single-trening div.imgTop img{width:100% !important; filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
- filter: gray;
-  -webkit-filter: grayscale(100%);}
+  body.single-trening div.imgTop img{width:100% !important;  filter: url("/wp-content/themes/psycompas/js/filters.svg#grayscale");  /* Firefox 10+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */   -webkit-backface-visibility: hidden; /* Fix for transition flickering */}
   
 body.single-trening div.sideAutor{  
 	  width: 156px;
@@ -3055,10 +3055,10 @@ width: 156px;
   margin-top: 8px;
 }
   div#wrapper.tren_cat div.psy-content_img{
-	  
-	  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
- filter: gray;
-  -webkit-filter: grayscale(100%);
+
+	  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+	  filter: gray; /* IE6-9 */
+	  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
   
 	  padding-bottom: 30px;
 }
@@ -3953,9 +3953,7 @@ body.single-individual div.imgTop{  position: absolute;
   z-index: 1;
   bottom: 0;
   right: 0;}
-  body.single-individual div.imgTop img{width:100% !important; filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
- filter: gray;
-  -webkit-filter: grayscale(100%);}
+  body.single-individual div.imgTop img{width:100% !important;  filter: url("/wp-content/themes/psycompas/js/filters.svg#grayscale");  /* Firefox 10+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */   -webkit-backface-visibility: hidden; /* Fix for transition flickering */}
   
 body.single-individual div.sideAutor{  
 	  width: 156px;
@@ -4093,9 +4091,7 @@ body.single-individual #primary ul.recent a.btnS div.obertkaBtn{
 ul#menu-treningnav{margin-left:0;}
 ul#menu-treningnav li a{font-size:13px;}
 div.other img{width: 100% !important;
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter ….3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-    filter: gray;
-    -webkit-filter: grayscale(100%);
+	 filter: url("/wp-content/themes/psycompas/js/filters.svg#grayscale");  /* Firefox 10+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */   -webkit-backface-visibility: hidden; /* Fix for transition flickering */
 	}
 	
 	div#primary div.personal_style div.imgTop{
@@ -4268,9 +4264,7 @@ div.statStyle.single-trening div.imgTop{  position: absolute;
   z-index: 1;
   bottom: 0;
   right: 0;}
-div.statStyle.single-trening div.imgTop img{width:100% !important; filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
- filter: gray;
-  -webkit-filter: grayscale(100%);}
+div.statStyle.single-trening div.imgTop img{width:100% !important;  filter: url("/wp-content/themes/psycompas/js/filters.svg#grayscale");  /* Firefox 10+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */   -webkit-backface-visibility: hidden; /* Fix for transition flickering */}
   
 div#primary div.single-trening div.sideAutor{  
 	  width: 156px;

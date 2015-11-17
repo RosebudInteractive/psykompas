@@ -941,11 +941,11 @@ body.page-id-4 h2.center {
 	margin-right: 8%;
 }
 
-@media only screen and (min-width: 960px) {
+
 #contact-locations .col1 {
 	margin-right: 14.9%;
 }
-}
+
 #contact-locations .col1, #contact-locations .col2 {
 	float: left;
 }
@@ -1604,88 +1604,7 @@ footer #footer-in a.emu-mark:hover {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (max-width: 767px) {
-/* HEADER
-    ----------------------------------------------- */
-#header {
-	max-width: 100%;
-	padding: 0;
-}
-h1#logo {
-	padding: 0 4%;
-	width: 92%;
-}
-/* UO BANNER
-    ----------------------------------------------- */
-#uobanner {
-	display: none;
-}
-/* NAV
-    ----------------------------------------------- */
-#mobile-nav {
-	display: block;
-	position: absolute;
-	right: 30px;
-	top: 23px;
-}
-#mobile-nav-control {
-	color: #888;
-	font-size: 28px;
-}
-.menu-main-container {
-	background: #f6f6f6;
-	border-bottom: 1px solid #eee;
-	float: left;
-	margin-top: 19px;
-	width: 100%;
-}
-#mainmenu li {
-	border-top: 1px solid #eee;
-	display: block;
-	padding: 0;
-}
-#mainmenu li > .children {
-	display: block;
-}
-#mainmenu > li > a {
-	color: #444;
-	font-weight: 700;
-}
-#mainmenu li a {
-	display: block;
-	padding: 12px 14px 10px 14px;
-}
-#mainmenu .children {
-	background: transparent;
-	border: none;
-	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-	-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-	-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-	margin: 0;
-	opacity: 1;
-	padding: 0;
-	position: static;
-	visibility: visible;
-}
-#mainmenu .children li {
-	margin: 0;
-	padding-bottom: 0px;/*     background: #eee; */
-}
-#mainmenu .children a {
-	font-weight: 400;
-	padding-left: 20px;
-}
-#mainmenu .children li:last-child {
-	padding-bottom: 0;
-}
-#mainmenu .children .current-menu-item a, #mainmenu .current-menu-item > a {
-	background: #1946ba;
-	color: #fff;
-}
-.menu-main-container > .current-menu-item:after, .menu-main-container > .current-page-ancestor:after, .menu-main-container .current_page_parent:after {
-	display: none;
-}
-}
+
 
 /* ==========================================================================
    Print styles

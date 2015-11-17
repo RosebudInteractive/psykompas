@@ -22,7 +22,7 @@
 <span class="parent-title">Новости</span>
  <div class="news-block">
      <?php
-$args =array( 'posts_per_page' => 5, 'orderby'=> 'ASK', 'category' => 62 );
+$args =array( 'posts_per_page' => 5, 'order' =>  'DESC', 'orderby'=> 'date', 'category' => 62 );
 					$myposts = get_posts($args);
 					foreach($myposts as $post) : setup_postdata($post);
 				?>

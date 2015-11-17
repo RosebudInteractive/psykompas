@@ -71,7 +71,7 @@
          <nav id="access" role="navigation">			
          	<!-- Main Menu -->
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '','items_wrap' => '<ul>%3$s<li id="item-id"><a href="/?theme=common">Обычная версия сайта</a> </li></ul>' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '','items_wrap' => '<ul>%3$s<li id="item-id"><a href="/?am_force_theme_layout=desktop">Обычная версия сайта</a> </li></ul>' ) ); ?>
 
  
 		</nav><!-- #site-navigation -->    

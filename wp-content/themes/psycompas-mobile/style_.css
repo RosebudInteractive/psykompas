@@ -3351,20 +3351,10 @@ float: left;
 }
 div.formZap div.lineForm div{float:left; display:inline;}
 
-div.formZap div.lineForm span.formTitle{    font-weight: bold;
-    font-size: 1.154em;
-    line-height: 41px;
-    padding-right: 10px;
-    position: relative;
-    top: 0;
-    left: 0px;
-    z-index: 4;}
-  
- #page #callWin .openwindowWrap div.formZap div.lineForm span.your-name{
-	position: absolute;
-    top: 10px;
-    left: 0;
- }
+div.formZap div.lineForm span.formTitle{font-weight: bold;
+  font-size: 1.154em;
+  line-height: 41px;
+  padding-right: 10px;}
   
 div.formZap div.lineForm span.formBtn {
 	  background-color: #d55645;
@@ -3418,11 +3408,10 @@ div.formZap div.lineForm span.formBtn {
 div.formZap div.lineForm span.your-tel input  {  border: none;
   width: 234px;	  font-size:17px;}
 div.formZap div.lineForm span.your-name input {
-    border: none;
-    width: 58%;
+  border: none;
+    width: 157px;
     font-size: 1em;
-    line-height: 22px;
-    margin-left: 100px;
+    line-height: 21px;
   }
   div.socialBlock{  width: 40px;
   margin-top: 30px;
@@ -3528,20 +3517,20 @@ div.socialBlock span.b-share-counter{  position: absolute;
    font-size:17px;
   }
   #page #callWin .openwindowWrap div.formZap div.lineForm span.formBtn{
-background-color: #d55645;
-    border: 2px solid #d55645;
-    color: white;
-    font-size: 13px;
-    letter-spacing: 0.75px;
-    text-align: center;
-    z-index: 5;
-    width: 201px;
-    height: 40px;
-    right: 0px;
-    border-radius: 20px;
-    top: 67px ; /*152px;*/
-    left: 33px;
-    display: block;
+  background-color: #d55645;
+  border: 2px solid #d55645;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 0.75px;
+  text-align: center;
+  z-index: 5;
+  width: 201px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  border-radius: 20px;
+  top: 78px;
+  left: 0;
   }
   #page #callWin .openwindowWrap div.formZap div.lineForm span.formBtn:hover,div.formZap div.lineForm span.formBtn:hover{
 	  		border: 2px solid #d55645;
@@ -4519,34 +4508,31 @@ div.formmob div.lineForm div{
 }
 div.formmob span.formTitle{
 	    font-weight: bold;
-	    font-size: 1.154em;
-	    line-height: 41px;
-	    padding-right: 10px;
-	    position: relative;
-	    top: 0;
-	    left: 10px;
-	    z-index: 4;
+    font-size: 1.154em;
+    line-height: 41px;
+    padding-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
 div.formmob div.lineForm div span.your-email{
 	    position: absolute;
-	    top: 0;
-	    left: 0;
+    top: 2px;
+    left: 74px;
 }
 div.formmob div.lineForm div span.your-tel{
 		    position: absolute;
-		    top: 0;
-		    left: 0;
+    top: 2px;
+    left: 88px;
 }
 
 div.formmob div.lineForm div span.your-email input{
-	    width: 64%;
-	    border: none;
-	    margin-left: 80px;
+	    width: 174px;
+    border: none;
 }
 div.formmob div.lineForm div span.your-tel input{
-	    width: 64%;
-	    border: none;
-	    margin-left: 93px;
+	    width: 164px;
+    border: none;
 }
 div.formmob div.lineForm + .lineForm{
 		border: 1px solid rgb(190, 189, 189);
@@ -4561,50 +4547,45 @@ div.formmob div.lineForm + .lineForm{
 }
 div.formmob div.lineForm + .lineForm span.your-name{
 	    position: absolute;
-	    z-index: 2;
-	    top: 0;
-	    left: 0;
+    top: 2px;
+    left: 100px;
 } 
 div.formmob div.lineForm + .lineForm span.your-name input{
-	width: 62%;
-	border:none;
-	margin-left: 100px;
+	width:154px; border:none;
 }
 div.formmob div.lineForm + .lineForm span.formBtn{
 	position: relative;
-	top: 90px;
-	text-align: center;
-	display: block;
-	background-color: #d55645;
-	border: 2px solid #d55645;
-	color: white;
-	font-size: 1em;
-	letter-spacing: 0.75px;
-	z-index: 5;
-	width: 144px;
-	height: 44px;
-	/* position: absolute; */
-	border-radius: 20px;
-	margin: 0 auto;
-	position: relative;
+    top: 90px;
+    text-align: center;
+    display: block;
+    background-color: #d55645;
+    border: 2px solid #d55645;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.75px;
+    z-index: 5;
+    width: 144px;
+    height: 44px;
+    /* position: absolute; */
+    border-radius: 20px;
+    margin: 0 auto;
 }
 div.formmob div.lineForm + .lineForm span.formBtn input{
 	color: white;
-	border: none;
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: 40px;
-	display: block;
-	text-decoration: none;
-	position: relative;
-	top: 0;
-	left: 0px;
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	letter-spacing: 0.9px;
-	width: 100%;
-	height: 100%;
-	/* display: block; */
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 40px;
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    letter-spacing: 0.9px;
+    width: 100%;
+    height: 100%;
 }
 div.formmob div.lineForm + .lineForm span.formBtn:hover{
 border: 2px solid #d55645;
@@ -4625,6 +4606,5 @@ div.formmob div.lineForm + .lineForm span.formBtn:active{
 li#item-id{font-size: 14px!important;
     padding-top: 10px;}
 	
-div.wpcf7-validation-errors {clear: both;display:none !important;}
-span.wpcf7-not-valid-tip {/* margin-top: 10px; *//* padding: 10px; */position: absolute;top: 33px;left: 0;width: 300px;}
-div.wpcf7-mail-sent-ok {    margin: 7em 0.5em 1em;}
+div.wpcf7-validation-errors {margin-top: 63px;}
+span.wpcf7-not-valid-tip {margin-top: 10px;padding: 10px;}
